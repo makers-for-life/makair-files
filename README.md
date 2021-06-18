@@ -19,7 +19,7 @@ Please follow the following steps to flash the provided images (on macOS):
 
 1. Note the mounted disk number with: `diskutil list` (for instance: `/dev/rdisk2`);
 2. Unmount all disk partitions, but do not eject them (can be done with Disk Utility in macOS);
-3. Flash the image to the target disk with: `bunzip2 -dc ./control-ui/images/makair-control-ui-rpi-production-v2_3_0.img.bz2 | sudo dd bs=1m of=/dev/rdisk2`;
+3. Flash the image to the target disk with: `bunzip2 -dc ./makair-control-ui-rpi-production-v2_3_0.img.bz2 | sudo dd bs=1m of=/dev/rdisk2`;
 4. Eject the disk once flashed, and insert it in a MakAir ventilator;
 
 Note that if connecting to the system over SSH, the user would be `alarm` and password: `alarmpi`. Once logged-in, the root password will be: `makair`.
